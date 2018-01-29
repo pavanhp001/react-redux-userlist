@@ -1,8 +1,8 @@
 import React from 'react'
-import {connect} from 'react-redux';
-import {getUsers} from '../actions/getUsers';
+import { connect } from 'react-redux';
+import { getUsers } from '../actions/getUsers';
 import UserBar from '../components/UserBar';
-import {BulletList} from 'react-content-loader';
+import { BulletList } from 'react-content-loader';
 
 const MyBulletListLoader = () => <BulletList />
 
@@ -73,4 +73,4 @@ const mapStateToProps = (state) => {
 	}
 }
 
-export default connect(mapStateToProps, {getUsers})(UserList)
+export default connect(mapStateToProps, { getUsers })(UserList)

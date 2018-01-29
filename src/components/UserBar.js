@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const UserBar = (props) => {
   return (
-    <Link to={`/users/${props.users.id}`}  style={{ textDecoration: 'none', color: 'black' }}>
+    <Link to={`/users/${props.users.login}`}  style={{ textDecoration: 'none', color: 'black' }}>
           <div className="disp-inlineBlock padding-20px">
             <img className="img-round" src={props.users.avatar_url} alt="User Images"/>
           </div>
