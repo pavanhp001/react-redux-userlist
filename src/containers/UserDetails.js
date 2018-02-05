@@ -38,11 +38,11 @@ class UserDetails extends React.Component {
                     <img  className="img-round-large" src={this.state.userDetails.avatar_url} alt="User Images"/>
                   }
                   <h5>{this.state.userDetails.url || '-' }</h5>
-                  <p>
+                  <div>
                     <h5>{this.state.userDetails.blog || '-' }</h5>
                     <h5>{this.state.userDetails.company || '-' }</h5>
                     <h5>{this.state.userDetails.location || '-' }</h5>
-                  </p>
+                  </div>
                 </div>: <MyBulletListLoader></MyBulletListLoader>
               }
             </div>
